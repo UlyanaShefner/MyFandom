@@ -140,5 +140,24 @@ footer {
     game-grid {
         grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     }
-
-
+h1{
+    font-family: "Arial Black", sans-serif;
+    font-size: 70px;
+    font-weight: 900;
+    color: #fff;
+    text-transform: uppercase;
+    /* Создание многослойного контура и объема */
+    text-shadow: 
+        -2px -2px 0 #000,  
+         2px -2px 0 #000,
+        -2px  2px 0 #000,
+         2px  2px 0 #000000,
+         4px  4px 0px #6dfafa, /* Цвет подложки */
+         6px  6px 10px rgba(0,0,0,0.5); /* Мягкая тень */
+    letter-spacing: 2px;
+}
+header {
+    position: sticky;
+    top: 0; /* Это значение определяет расстояние сверху, начиная с которого header станет фиксированным */
+    z-index: 100; /* Чтобы шапка отображалась над остальными элементами при перекрытии */
+}
